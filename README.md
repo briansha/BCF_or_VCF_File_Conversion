@@ -1,7 +1,5 @@
 # BCF_or_VCF_file_Conversion
 
-### This workflow converts BCF files to VCF files or vice-versa using a Docker image with BCFTOOLS.
-### Input files need to all be either BCF or VCF files and will be converted according to the --output-type parameter.
+## This WDL converts BCF files to VCF files or vice-versa using a Docker image with BCFTOOLS.
 
-Copyright &copy; 2020 Brian Sharber
-All rights reserved
+BCFTOOLS found here: http://samtools.github.io/bcftools/bcftools.html
