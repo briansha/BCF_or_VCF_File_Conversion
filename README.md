@@ -1,4 +1,4 @@
-# BCF_or_VCF_file_Conversion
+# BCF_or_VCF_File_Conversion
 
 ## This WDL converts BCF files to VCF files or vice-versa using a Docker image with BCFTOOLS.
 
