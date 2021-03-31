@@ -139,7 +139,7 @@ task Convert_File {
     runtime {
         docker: docker_image
         memory: memory + " GiB"
-		disks: "local-disk " + disk + " HDD"
+	disks: "local-disk " + disk + " HDD"
         cpu: threads
     }
 }
