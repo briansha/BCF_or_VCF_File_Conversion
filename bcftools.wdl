@@ -2,7 +2,10 @@ version development
 
 ## Version 04-05-2021
 ##
-## This workflow converts BCF files to VCF files or vice-versa using BCFTOOLS.
+## This workflow converts BCF files to VCF files or vice-versa using BCFTools.
+## This workflow assumes users have thoroughly read the BCFTools documentation for the view command section.
+## BCFTools documentation: http://samtools.github.io/bcftools/bcftools.html
+##
 ## Input files need to all be either BCF or VCF files and will be converted according to the --output-type parameter.
 ##
 ## Cromwell version support - Successfully tested on v59
@@ -42,15 +45,16 @@ workflow BCF_To_VCF {
     	author : "Brian Sharber"
         email : "brian.sharber@vumc.org"
         description : "Run BCFTOOLS"
-       }
+    }
 }
 
 task Convert_File {
 
+    # Refer to BCFTools documentation for the descriptions to most of these parameters.
     input {
         File input_file
         File? index_file
-        String docker_image
+        String docker_image # Docker image containing BCFTools.
         Int? memory
         Int? disk
         Int? threads
