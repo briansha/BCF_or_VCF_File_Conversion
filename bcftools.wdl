@@ -8,6 +8,10 @@ version development
 ##
 ## Input files need to all be either BCF or VCF files and will be converted according to the --output-type parameter.
 ##
+## This workflow will run into issues if: 
+##     - the samples parameter is used.
+##     - use the samples_file parameter instead and place all samples in one file in one column.  
+## 
 ## Cromwell version support - Successfully tested on v59
 ##
 ## Distributed under terms of the MIT License
